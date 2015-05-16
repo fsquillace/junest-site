@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>JuJube Linux by fsquillace</title>
+    <title>JuJube Linux</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -17,19 +18,20 @@
   <body>
 
       <header>
-        <h1>JuJube Linux</h1>
-        <p>JuJube Linux website</p>
+        <h1><img src="images/jujube-text.png" alt="JuJube Linux"><img height="20%" src="images/jujube-32x60.png" alt="JuJube Logo"></h1>
+        <p>The Arch Linux based distro that runs upon any Linux distros without root access</p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/fsquillace/jujube-site" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/fsquillace/jujube" class="button fork">View On GitHub</a>
         <div class="downloads">
-          <span>Downloads:</span>
+          <span>Download images:</span>
           <ul>
-            <li><a href="https://github.com/fsquillace/jujube-site/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/fsquillace/jujube-site/tarball/master" class="button">TAR</a></li>
+            <li><a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-x86_64.tar.gz" class="button">x86_64</a></li>
+            <li><a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-x86.tar.gz" class="button">x86</a></li>
+            <li><a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-arm.tar.gz" class="button">ARM</a></li>
           </ul>
         </div>
       </div><!-- end banner -->
@@ -77,19 +79,19 @@ to a wide range of packages from the Arch Linux repositories.</p>
 <li>As normal user - Allow to make basic operations using <a href="https://wiki.archlinux.org/index.php/Proot">proot</a>:</li>
 </ul>
 
-<div class="highlight highlight-sh"><pre>    jujube</pre></div>
+<div class="highlight highlight-sh"><pre><code>jujube</code></pre></div>
 
 <ul>
 <li>As fakeroot - Allow to install/remove packages using <a href="https://wiki.archlinux.org/index.php/Proot">proot</a>:</li>
 </ul>
 
-<div class="highlight highlight-sh"><pre>    jujube -f</pre></div>
+<div class="highlight highlight-sh"><pre><code>jujube -f</code></pre></div>
 
 <ul>
 <li>As root - Allow to have fully root privileges inside JuJube environment using <a href="https://wiki.archlinux.org/index.php/Chroot">arch-chroot</a> (you need to be root for executing this):</li>
 </ul>
 
-<div class="highlight highlight-sh"><pre>    jujube -r</pre></div>
+<div class="highlight highlight-sh"><pre><code>jujube -r</code></pre></div>
 
 <p>If the JuJube image has not been downloaded yet, the script will download
 the JuJube image and will place it to the default directory ~/.jujube.
@@ -383,20 +385,20 @@ along with this program.  If not, see <a href="http://www.gnu.org/licenses/">htt
 <p>Quote of the <a href="http://en.wikipedia.org/wiki/Ziziphus_lotus">lotus</a> (a selvatic jujube plant)</p>
 
 <blockquote>
-<p>Per nove infausti dì sul mar pescoso
-i venti rei mi trasportaro. Al fine
-nel decimo sbarcammo in su le rive
-de’ Lotofági, un popolo, a cui cibo
-È d’una pianta il florido germoglio.
-...
-...
-Partiro e s’affrontaro a quella gente,
-che, lunge dal voler la vita loro,
-il dolce loto a savorar lor porse.
-chiunque l’esca dilettosa, e nuova
-gustato avea, con le novelle indietro
-non bramava tornar: colà bramava
-starsi, e, mangiando del soave loto,
+  <p>Per nove infausti dì sul mar pescoso</br>
+i venti rei mi trasportaro. Al fine</br>
+nel decimo sbarcammo in su le rive</br>
+de’ Lotofági, un popolo, a cui cibo</br>
+È d’una pianta il florido germoglio.</br>
+...</br>
+...</br>
+Partiro e s’affrontaro a quella gente,</br>
+che, lunge dal voler la vita loro,</br>
+il dolce loto a savorar lor porse.</br>
+chiunque l’esca dilettosa, e nuova</br>
+gustato avea, con le novelle indietro</br>
+non bramava tornar: colà bramava</br>
+starsi, e, mangiando del soave loto,</br>
 la contrada natia sbandir dal petto.</p>
 </blockquote>
 
