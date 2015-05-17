@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>JuJube Linux</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1><img src="images/jujube-text.png" alt="JuJube Linux"><img height="20%" src="images/jujube-32x60.png" alt="JuJube Logo"></h1>
+        <p>Your little Arch wherever you need!</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <div class="menu">
+          <ul>
+            <li><a href="/" class="button">Home</a></li>
+            <li><a href="downloads.html" class="button">Downloads</a></li>
+            <li><a href="https://github.com/fsquillace/jujube/wiki" target="_blank" class="button">Wiki</a></li>
+            <li><a href="https://github.com/fsquillace/jujube/issues" target="_blank" class="button">Bugs</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+<p>JuJube can works on GNU/Linux OS with kernel version greater or equal
+2.6.0 (JuJube was not tested on kernel versions older than this) on 64 bit, 32 bit and ARM architectures.</p>
+
+<h2>
+<a id="method-one" class="anchor" href="#method-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>Method one (Recommended)</h2>
+
+<p>Just clone the JuJube repo somewhere (for example in ~/jujube):</p>
+
+<pre><code>git clone git://github.com/fsquillace/jujube ~/jujube
+export PATH=~/jujube/bin:$PATH
+</code></pre>
+
+<h2>
+<a id="method-two" class="anchor" href="#method-two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Method two</h2>
+
+<p>Another installation method would be to directly download the JuJube image and place it to the default directory ~/.jujube:</p>
+
+<pre><code>ARCH=&lt;one of "x86_64", "x86", "arm"&gt;
+mkdir ~/.jujube
+curl https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-${ARCH}.tar.gz | tar -xz -C ~/.jujube
+export PATH=~/.jujube/opt/jujube/bin:$PATH
+</code></pre>
+
+<div class="menu">
+  <span>Downloads:</span>
+  <a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-x86_64.tar.gz" class="button">x86_64</a>
+  <a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-x86.tar.gz" class="button">x86</a>
+  <a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-arm.tar.gz" class="button">arm</a>
+</div>
+
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/fsquillace">fsquillace</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-63054253-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
@@ -19,19 +20,19 @@
 
       <header>
         <h1><img src="images/jujube-text.png" alt="JuJube Linux"><img height="20%" src="images/jujube-32x60.png" alt="JuJube Logo"></h1>
-        <p>The Arch Linux based distro that runs upon any Linux distros without root access</p>
+        <p>Your little Arch anytime you need!</p>
       </header>
 
       <div id="banner">
-        <span id="logo"></span>
+        <span id="logo">
+        </span>
 
-        <a href="https://github.com/fsquillace/jujube" class="button fork">View On GitHub</a>
-        <div class="downloads">
-          <span>Download images:</span>
+        <div class="menu">
           <ul>
-            <li><a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-x86_64.tar.gz" class="button">x86_64</a></li>
-            <li><a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-x86.tar.gz" class="button">x86</a></li>
-            <li><a href="https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-arm.tar.gz" class="button">ARM</a></li>
+            <li><a href="/" class="button">Home</a></li>
+            <li><a href="downloads.html" class="button">Downloads</a></li>
+            <li><a href="https://github.com/fsquillace/jujube/wiki" target="_blank" class="button">Wiki</a></li>
+            <li><a href="https://github.com/fsquillace/jujube/issues" target="_blank" class="button">Bugs</a></li>
           </ul>
         </div>
       </div><!-- end banner -->
@@ -44,9 +45,8 @@
         <h1>
 <a id="jujube" class="anchor" href="#jujube" aria-hidden="true"><span class="octicon octicon-link"></span></a>JuJube</h1>
 
-<p><strong>JuJube</strong>: the Arch Linux based distro that runs upon any Linux distros without root access</p>
-
-<p><a href="https://travis-ci.org/fsquillace/jujube"><img src="https://api.travis-ci.org/fsquillace/jujube.png?branch=master" alt="Build status"></a></p>
+<p>The Arch Linux based distro that runs upon any Linux distros without root access</p>
+<p><a aria-label="Star fsquillace/jujube on GitHub" href="https://github.com/fsquillace/jujube" class="github-button">Star</a></p>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
@@ -99,27 +99,6 @@ You can change the default directory by changing the environment variable <em>JU
 
 <p>If you are new on Archlinux and you are not familiar with <em>pacman</em> package manager
 visit the <a href="https://wiki.archlinux.org/index.php/Pacman_Rosetta">pacman rosetta page</a>.</p>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>Just clone the JuJube repo somewhere (for example in ~/jujube):</p>
-
-<pre><code>git clone git://github.com/fsquillace/jujube ~/jujube
-export PATH=~/jujube/bin:$PATH
-</code></pre>
-
-<p>Alternatively, another installation method would be to directly download the JuJube image and place it to the default directory ~/.jujube:</p>
-
-<pre><code>ARCH=&lt;one of "x86_64", "x86", "arm"&gt;
-mkdir ~/.jujube
-curl https://dl.dropboxusercontent.com/u/42449030/jujube/jujube-${ARCH}.tar.gz | tar -xz -C ~/.jujube
-export PATH=~/.jujube/opt/jujube/bin:$PATH
-</code></pre>
-
-<p>JuJube can works on GNU/Linux OS with kernel version greater or equal
-2.6.0 (JuJube was not tested on kernel versions older than this) on 64 bit, 32 bit and ARM architectures.</p>
-
 <h2>
 <a id="advanced-usage" class="anchor" href="#advanced-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced usage</h2>
 
@@ -207,151 +186,6 @@ of GNU/Linux distributions. The needed executables in the host OS are:</p>
 <p>The minimum recommended linux kernel is 2.6.0+</p>
 
 <h2>
-<a id="troubleshooting" class="anchor" href="#troubleshooting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Troubleshooting</h2>
-
-<h3>
-<a id="cannot-use-aur-repository" class="anchor" href="#cannot-use-aur-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cannot use AUR repository</h3>
-
-<ul>
-<li>
-<strong>Q</strong>: Why do I get the following error when I try to install a package with yaourt?</li>
-</ul>
-
-<pre><code>Cannot find the gzip binary required for compressing man and info pages.
-</code></pre>
-
-<ul>
-<li>
-<strong>A</strong>: JuJube comes with a very basic number of packages.
-In order to install packages using yaourt you may need to install the package group <em>base-devel</em>
-that contains all the essential packages for compiling source code (such as gcc, make, patch, etc):</li>
-</ul>
-
-<pre><code>    pacman -S base-devel
-</code></pre>
-
-<h3>
-<a id="kernel-too-old" class="anchor" href="#kernel-too-old" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kernel too old</h3>
-
-<ul>
-<li>
-<strong>Q</strong>: Why do I get the error: "FATAL: kernel too old"?</li>
-<li>
-<strong>A</strong>: This is because the executable from the precompiled package cannot
-properly run if the kernel is old.
-JuJube contains two different PRoot binaries, and one of them is highly compatible
-with old linux kernel versions. JuJube will detect which PRoot binary need to be
-executed but you may need to specify the PRoot <em>-k</em> option if the guest rootfs
-requires a newer kernel version:</li>
-</ul>
-
-<pre><code>    jujube -p "-k 3.10"
-</code></pre>
-
-<p>In order to check if an executable inside JuJube environment can be compatible
-with the kernel of the host OS just use the <em>file</em> command, for instance:</p>
-
-<pre><code>    file ~/.jujube/usr/bin/bash
-    ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked
-    (uses shared libs), for GNU/Linux 2.6.32,
-    BuildID[sha1]=ec37e49e7188ff4030052783e61b859113e18ca6, stripped
-</code></pre>
-
-<p>From the output you can see what is the minimum recommended Linux kernel version.</p>
-
-<h3>
-<a id="suid-permissions" class="anchor" href="#suid-permissions" aria-hidden="true"><span class="octicon octicon-link"></span></a>SUID permissions</h3>
-
-<ul>
-<li>
-<strong>Q</strong>: Why I do not have permissions for ping?</li>
-</ul>
-
-<pre><code>    ping www.google.com
-    ping: icmp open socket: Operation not permitted
-</code></pre>
-
-<ul>
-<li>
-<strong>A</strong>: The ping command uses <em>suid</em> permissions that allow to execute the command using
-root privileges. The fakeroot mode is not able to execute a command set with suid,
-and you may need to use root privileges. There are other few commands that
-have <em>suid</em> permission, you can list the commands from your JuJube environment
-with the following command:</li>
-</ul>
-
-<pre><code>    find /usr/bin -perm +4000
-</code></pre>
-
-<h3>
-<a id="no-characters-are-visible-on-a-graphic-application" class="anchor" href="#no-characters-are-visible-on-a-graphic-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>No characters are visible on a graphic application</h3>
-
-<ul>
-<li><p><strong>Q</strong>: Why I do not see any characters in the application I have installed?</p></li>
-<li><p><strong>A</strong>: This is probably because there are no 
-<a href="https://wiki.archlinux.org/index.php/Font_Configuration">fonts</a> installed in
-the system.</p></li>
-</ul>
-
-<p>To quick fix this, you can just install a fonts package:</p>
-
-<pre><code>    pacman -S gnu-free-fonts
-</code></pre>
-
-<h3>
-<a id="differences-between-filesystem-and-package-ownership" class="anchor" href="#differences-between-filesystem-and-package-ownership" aria-hidden="true"><span class="octicon octicon-link"></span></a>Differences between filesystem and package ownership</h3>
-
-<ul>
-<li>
-<strong>Q</strong>: Why do I get warning when I install a package using root privileges?</li>
-</ul>
-
-<pre><code>    pacman -S systat
-    ...
-    warning: directory ownership differs on /usr/
-    filesystem: 1000:100  package: 0:0
-    ...
-</code></pre>
-
-<ul>
-<li>
-<strong>A</strong>: In these cases the package installation went smoothly anyway.
-This should happen every time you install package with root privileges
-since JuJube will try to preserve the JuJube environment by assigning ownership
-of the files to the real user.</li>
-</ul>
-
-<h3>
-<a id="no-servers-configured-for-repository" class="anchor" href="#no-servers-configured-for-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>No servers configured for repository</h3>
-
-<ul>
-<li>
-<strong>Q</strong>: Why I cannot install packages?</li>
-</ul>
-
-<pre><code>    pacman -S lsof
-    Packages (1): lsof-4.88-2
-
-    Total Download Size:    0.09 MiB
-    Total Installed Size:   0.21 MiB
-
-    error: no servers configured for repository: core
-    error: no servers configured for repository: community
-    error: failed to commit transaction (no servers configured for repository)
-    Errors occurred, no packages were upgraded.
-</code></pre>
-
-<ul>
-<li>
-<strong>A</strong>: You need simply to update the mirrorlist file according to your location:</li>
-</ul>
-
-<pre><code>    # Uncomment the repository line according to your location
-    nano /etc/pacman.d/mirrorlist
-    pacman -Syy
-</code></pre>
-
-<h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>Copyright (c) 2012-2015</p>
@@ -373,11 +207,6 @@ along with this program.  If not, see <a href="http://www.gnu.org/licenses/">htt
 <a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
 
 <p>Filippo Squillace <a href="mailto:feel.squally@gmail.com">feel.squally@gmail.com</a></p>
-
-<h2>
-<a id="www" class="anchor" href="#www" aria-hidden="true"><span class="octicon octicon-link"></span></a>WWW</h2>
-
-<p><a href="https://github.com/fsquillace/jujube">https://github.com/fsquillace/jujube</a></p>
 
 <h2>
 <a id="last-words" class="anchor" href="#last-words" aria-hidden="true"><span class="octicon octicon-link"></span></a>Last words</h2>
