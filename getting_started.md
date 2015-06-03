@@ -6,14 +6,14 @@ Quickstart
 ==========
 There are three different ways you can run JuNest:
 
-- As normal user - Allow to make basic operations using [proot](https://wiki.archlinux.org/index.php/Proot): ```junest```
+- As normal user - Allow to make basic operations: ```junest```
 
-- As fakeroot - Allow to install/remove packages using [proot](https://wiki.archlinux.org/index.php/Proot): ```junest -f```
+- As fakeroot - Allow to install/remove packages: ```junest -f```
 
-- As root - Allow to have fully root privileges inside JuNest environment using [arch-chroot](https://wiki.archlinux.org/index.php/Chroot) (you need to be root for executing this): ```junest -r```
+- As root - Allow to have fully root privileges inside JuNest environment (you need to be root for executing this): ```junest -r```
 
 If the JuNest image has not been downloaded yet, the script will download
-the JuNest image and will place it to the default directory ~/.junest.
+the image and will place it to the default directory ~/.junest.
 You can change the default directory by changing the environment variable *JUNEST\_HOME*.
 
 If you are new on Archlinux and you are not familiar with *pacman* package manager

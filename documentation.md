@@ -3,7 +3,7 @@ layout: default
 ---
 
 Advanced usage
-============
+==============
 
 ## Build image ##
 You can build a new JuNest image from scratch by running the following command:
@@ -34,10 +34,6 @@ Check out the proot options with:
 
     junest -p "--help"
 
-##Automatic fallback to classic chroot##
-Since the [arch-chroot](https://wiki.archlinux.org/index.php/Chroot) may not work
-on some distros, JuNest automatically tries to fallback to the classic chroot.
-
 ## JuNest as a container ##
 Although JuNest has not been designed to be a complete container, it is even possible to
 virtualize the process tree thanks to the [systemd container](https://wiki.archlinux.org/index.php/Systemd-nspawn).
@@ -53,6 +49,25 @@ To boot a JuNest container:
 Related wiki page:
 
 - [How to run junest as a container](https://github.com/fsquillace/junest/wiki/How-to-run-JuNest-as-a-container)
+
+Internals
+=========
+
+There are two main chroot jail used in JuNest.
+The main one is [proot](https://wiki.archlinux.org/index.php/Proot) which
+allows unprivileged users to execute programs inside a sandbox and
+[arch-chroot](https://wiki.archlinux.org/index.php/Chroot) which is an
+enhanced chroot for privileged users that mounts the primary directories
+(i.e. /proc, /sys, /dev and /run) before executing any programs inside
+the sandbox.
+
+##Automatic fallback to classic chroot##
+Since the [arch-chroot](https://wiki.archlinux.org/index.php/Chroot) may not work
+on some distros, JuNest automatically tries to fallback to the classic chroot.
+
+##Automatic building of the JuNest images##
+The JuNest images are built every week so that you can always get the most
+updated package versions.
 
 Troubleshooting
 ===============

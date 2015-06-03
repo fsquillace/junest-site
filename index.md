@@ -5,7 +5,7 @@ layout: default
 
 JuNest
 ======
-The Arch Linux based distro that runs upon any Linux distros without root access
+The Arch Linux based distro that runs upon any Linux distros without root access.
 
 {% include star-me.html %}
 
@@ -15,7 +15,7 @@ Description
 an isolated GNU/Linux environment inside any generic host GNU/Linux OS
 and without the need to have root privileges for installing packages.
 
-JuNest contains mainly the package managers (called pacman and yaourt) that allows to access
+JuNest contains mainly the package managers (called [pacman](https://wiki.archlinux.org/index.php/Pacman) and [yaourt](https://wiki.archlinux.org/index.php/Yaourt)) that allows to access
 to a wide range of packages from the Arch Linux repositories.
 
 The main advantages on using JuNest are:
