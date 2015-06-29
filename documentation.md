@@ -11,7 +11,7 @@ You can build a new JuNest image from scratch by running the following command:
     junest -b [-n]
 
 The script will create a directory containing all the essentials
-files in order to make JuNest working properly (such as pacman, yaourt, arch-chroot and proot).
+files in order to make JuNest working properly (such as pacman, yaourt and proot).
 The option **-n** will skip the final validation tests if they are not needed.
 Remember that the script to build the image must run in an Arch Linux OS with
 arch-install-scripts, package-query, git and the base-devel packages installed.
@@ -24,6 +24,13 @@ After creating the image junest-x86\_64.tar.gz you can install it by running:
 Related wiki page:
 
 - [How to build a JuNest image using QEMU](https://github.com/fsquillace/junest/wiki/How-to-build-a-JuNest-image-using-QEMU)
+
+## Run JuNest using a different architecture via QEMU ##
+The following command will download the ARM JuNest image and will run QEMU in
+case the host OS runs on either x86\_64 or x86 architectures:
+
+    $> JUNEST_HOME=~/.junest-arm junest -a arm -- uname -m
+    armv7l
 
 ## Bind directories ##
 To bind a host directory to a guest location, you can use proot arguments:
@@ -56,18 +63,31 @@ Internals
 There are two main chroot jail used in JuNest.
 The main one is [proot](https://wiki.archlinux.org/index.php/Proot) which
 allows unprivileged users to execute programs inside a sandbox and
+jchroot, a small and portable version of
 [arch-chroot](https://wiki.archlinux.org/index.php/Chroot) which is an
 enhanced chroot for privileged users that mounts the primary directories
 (i.e. /proc, /sys, /dev and /run) before executing any programs inside
 the sandbox.
 
 ##Automatic fallback to classic chroot##
-Since the [arch-chroot](https://wiki.archlinux.org/index.php/Chroot) may not work
-on some distros, JuNest automatically tries to fallback to the classic chroot.
+If jchroot fails for some reasons in the host system (i.e. it is not able to
+mount one of the directories),
+JuNest automatically tries to fallback to the classic chroot.
+
+##Automatic fallback for all the dependent host OS executables##
+JuNest attempt first to run the executables in the host OS located in different
+positions (/usr/bin, /bin, /usr/sbin and /sbin).
+As a fallback it tries to run the same executable if it is available in the JuNest
+image.
 
 ##Automatic building of the JuNest images##
 The JuNest images are built every week so that you can always get the most
 updated package versions.
+
+##Static QEMU binaries##
+There are static QEMU binaries included in JuNest image that allows to run JuNest
+in a different architecture from the host system. They are located in `/opt/qemu`
+directory.
 
 Troubleshooting
 ===============

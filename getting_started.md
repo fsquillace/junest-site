@@ -49,10 +49,12 @@ JuNest comes with a very short list of dependencies in order to be installed in 
 of GNU/Linux distributions. The needed executables in the host OS are:
 
 - bash
-- wget or curl
-- tar
-- mkdir
-- ln
 - chown (for root access only)
+- ln
+- mkdir
+- rm
+- tar
+- uname
+- wget or curl
 
 The minimum recommended linux kernel is 2.6.0+
