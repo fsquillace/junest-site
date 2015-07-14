@@ -1,3 +1,4 @@
 exclude: [vendor]
+baseurl: /junest-site
 gems:
       - jekyll-sitemap

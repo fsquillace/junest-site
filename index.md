@@ -33,3 +33,13 @@ The main advantages on using JuNest are:
 - All Arch Linux lovers can have their favourite distro everywhere!
 
 JuNest follows the [Arch Linux philosophy](https://wiki.archlinux.org/index.php/The_Arch_Way).
+
+Blog posts
+==========
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
