@@ -18,3 +18,5 @@ the JuNest image. Previously, the JuNest script were copied in the directory
 not be easily updated. Now, inside a JuNest environment, it is possible
 to update JuNest with the most recent changes by just upgrading the
 [_junest-git_](https://aur.archlinux.org/packages/junest-git/) package.
+
+{% include comments.html%}

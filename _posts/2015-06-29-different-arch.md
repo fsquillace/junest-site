@@ -18,3 +18,5 @@ permissions on the machine that need to test/use applications on
 different architectures. Another advantage is that, there might be packages
 available only on some specific architectures that the users can still use
 even though the native architecture is different.
+
+{% include comments.html%}

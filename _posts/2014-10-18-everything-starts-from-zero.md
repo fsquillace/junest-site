@@ -168,3 +168,5 @@ distro actually does.
 Starting to realize that this blog is too long so, I conclude by saying thanks to
 everybody that does and will do contributions to this project. Hope you will
 like the name and the distro!
+
+{% include comments.html%}

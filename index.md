@@ -39,7 +39,11 @@ Blog posts [![RSS feed]({{site.baseurl}}/images/feed-icon-28x28.png)]({{site.bas
 <ul class="posts">
   {% for post in site.posts %}
   <li>
-    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a>
+<!--The following looks not always working; keeping it commented for the moment-->
+<!--(<a href="{{site.baseurl}}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a>)-->
   </li>
 {% endfor %}
 </ul>
+
+{% include comment-counts.html %}

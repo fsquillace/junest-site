@@ -25,3 +25,5 @@ to have JuNest running even on really small OS such as
 There are only eight needed executables for JuNest: `bash`,
 `chown` (for root access only), `ln`, `mkdir`, `rm`, `tar`, `uname` and
 either `wget` or `curl`.
+
+{% include comments.html%}
