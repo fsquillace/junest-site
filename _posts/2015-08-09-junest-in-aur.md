@@ -3,12 +3,16 @@ title: JuNest is now in AUR!
 layout: default
 ---
 
+{{page.title}}
+==============
+
 JuNest is now available in
 [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) repository.
 This means that you can easily install JuNest inside an Arch Linux based
 system with the following command:
 
     yaourt -S junest-git
+
 <!--more-->
 
 An additional benefit is that

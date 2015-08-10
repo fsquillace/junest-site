@@ -3,6 +3,9 @@ title: JuNest on different architectures
 layout: default
 ---
 
+{{page.title}}
+==============
+
 JuNest can now emulates any images for x86, x86\_64 and arm architectures!
 The neat syntax is the following:
 

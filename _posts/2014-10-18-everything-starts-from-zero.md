@@ -3,6 +3,9 @@ title: Everything starts from zero! (MUST READ)
 layout: default
 ---
 
+{{page.title}}
+==============
+
 This is the first (and hopefully not last) blog post for
 JuNest. Generally, I will use the blog posts to provide news, anecdote
 and stories informally about this project. For this particular blog post

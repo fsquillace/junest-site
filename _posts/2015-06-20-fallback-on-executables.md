@@ -3,6 +3,9 @@ title: JuNest runs on exotic environments
 layout: default
 ---
 
+{{page.title}}
+==============
+
 One of the most important aspects of JuNest is that it must run even
 on exotic host systems. This JuNest principle implies that many failure cases
 need to be taken into account. For instance, JuNest must use a limited number of
