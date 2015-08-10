@@ -34,7 +34,7 @@ The main advantages on using JuNest are:
 
 JuNest follows the [Arch Linux philosophy](https://wiki.archlinux.org/index.php/The_Arch_Way).
 
-Blog posts [![RSS feed]({{site.baseurl}}/images/feed-icon-28x28.png)]({{site.baseurl}}/feed.xml "RSS feed") [![RSS feedly]({{site.baseurl}}/images/feedly-icon-28x28.png)](https://feedly.com/i/subscription/feed/{{site.baseurl}}/feed.xml "Feedly RSS")
+Blog posts [![RSS feed]({{site.baseurl}}/images/feed-icon-28x28.png)]({{site.baseurl}}/feed.xml "RSS feed") [![RSS feedly]({{site.baseurl}}/images/feedly-icon-28x28.png)](https://feedly.com/i/subscription/feed/{{site.url}}feed.xml "Feedly RSS")
 ==========
 <ul class="posts">
   {% for post in site.posts %}
