@@ -1,17 +1,15 @@
 ---
 title: Everything starts from zero! (MUST READ)
 layout: default
-excerpt_separator: <!--more-->
 ---
 
-Everything starts from zero!
-==============
 This is the first (and hopefully not last) blog post for
 JuNest. Generally, I will use the blog posts to provide news, anecdote
 and stories informally about this project. For this particular blog post
 I will explain the reasons that brought me to build JuNest, how it was born
 and why I decided to give that name. Despite of my bad English
 I hope you will enjoy this article anyway.
+<!--more-->
 
 The reasons
 -----------

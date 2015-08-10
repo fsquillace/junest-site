@@ -1,17 +1,14 @@
 ---
 title: JuNest runs on exotic environments
 layout: default
-excerpt_separator: <!--more-->
 ---
-
-JuNest can even run in the most exotic environments!
-==============
 
 One of the most important aspects of JuNest is that it must run even
 on exotic host systems. This JuNest principle implies that many failure cases
 need to be taken into account. For instance, JuNest must use a limited number of
 unix commands in order to have more chances of portability
 on heterogeneous systems.
+<!--more-->
 
 In the last release, the JuNest portability has been drastically
 increased thanks to a reliable fallback mechanism.

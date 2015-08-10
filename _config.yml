@@ -1,4 +1,11 @@
 exclude: [vendor]
 baseurl: /junest-site
+
+name:         JuNest
+description:  The Arch Linux based distro that runs upon any Linux distros without root access
+url:          http://fsquillace.github.io/junest-site/
+
+excerpt_separator: <!--more-->
+
 gems:
       - jekyll-sitemap
