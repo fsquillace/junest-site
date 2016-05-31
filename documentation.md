@@ -76,22 +76,22 @@ enhanced chroot for privileged users that mounts the primary directories
 (i.e. /proc, /sys, /dev and /run) before executing any programs inside
 the sandbox.
 
-##Automatic fallback to classic chroot##
+## Automatic fallback to classic chroot ##
 If jchroot fails for some reasons in the host system (i.e. it is not able to
 mount one of the directories),
 JuNest automatically tries to fallback to the classic chroot.
 
-##Automatic fallback for all the dependent host OS executables##
+## Automatic fallback for all the dependent host OS executables ##
 JuNest attempt first to run the executables in the host OS located in different
 positions (/usr/bin, /bin, /usr/sbin and /sbin).
 As a fallback it tries to run the same executable if it is available in the JuNest
 image.
 
-##Automatic building of the JuNest images##
+## Automatic building of the JuNest images ##
 The JuNest images are built every week so that you can always get the most
 updated package versions.
 
-##Static QEMU binaries##
+## Static QEMU binaries ##
 There are static QEMU binaries included in JuNest image that allows to run JuNest
 in a different architecture from the host system. They are located in `/opt/qemu`
 directory.
@@ -99,7 +99,7 @@ directory.
 Troubleshooting
 ===============
 
-##Cannot use AUR repository##
+## Cannot use AUR repository ##
 
 > **Q**: Why do I get the following error when I try to install a package with yaourt?
 
@@ -111,7 +111,7 @@ Troubleshooting
 
     #> pacman -S base-devel
 
-##No servers configured for repository##
+## No servers configured for repository ##
 
 > **Q**: Why I cannot install packages?
 
@@ -146,7 +146,7 @@ Troubleshooting
     $> pkgfile getop
     core/util-linux
 
-##Kernel too old##
+## Kernel too old ##
 
 > **Q**: Why do I get the error: "FATAL: kernel too old"?
 
@@ -167,7 +167,7 @@ Troubleshooting
 
 > From the output you can see what is the minimum recommended Linux kernel version.
 
-##SUID permissions##
+## SUID permissions ##
 > **Q**: Why I do not have permissions for ping?
 
     $> ping www.google.com
@@ -181,7 +181,7 @@ Troubleshooting
 
     $> find /usr/bin -perm +4000
 
-##No characters are visible on a graphic application##
+## No characters are visible on a graphic application ##
 
 > **Q**: Why I do not see any characters in the application I have installed?
 
@@ -193,7 +193,7 @@ Troubleshooting
 
     #> pacman -S gnu-free-fonts
 
-##Differences between filesystem and package ownership##
+## Differences between filesystem and package ownership ##
 
 > **Q**: Why do I get warning when I install a package using root privileges?
 

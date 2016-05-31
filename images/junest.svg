@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="68"
+   height="68"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="junest.svg">
+  <title
+     id="title2991">JuNest</title>
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5310"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5312" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5242"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#5eba00;stop-opacity:1;"
+         offset="0"
+         id="stop5244" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.367647"
+     inkscape:cx="20.908691"
+     inkscape:cy="34"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>JuNest</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>junest jujube</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>fsquillace</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-243.8125,-235.875)">
+    <rect
+       style="fill:#550000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2985"
+       width="67.023911"
+       height="45.972851"
+       x="244.36638"
+       y="257.4267"
+       ry="22.986425"
+       rx="25.082716" />
+    <path
+       style="fill:#5eba00;fill-opacity:1;stroke:#000000;stroke-width:1.00888419;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 305.38211,236.57092 c -31.03457,3.22342 -27.0403,20.58447 -27.0403,20.58447 0,0 12.78265,-1.02745 19.19689,-7.91804 5.77874,-6.20795 7.84341,-12.66643 7.84341,-12.66643 z"
+       id="path3007"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.64265865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5268"
+       sodipodi:cx="12.705825"
+       sodipodi:cy="5.5545521"
+       sodipodi:rx="7.0434465"
+       sodipodi:ry="0.20169154"
+       d="m 19.749271,5.5545521 c 0,0.1113911 -3.153458,0.2016915 -7.043446,0.2016915 -3.8899883,0 -7.0434467,-0.0903 -7.0434467,-0.2016915 0,-0.1113912 3.1534584,-0.2016916 7.0434467,-0.2016916 3.859582,0 7.000303,0.088946 7.043015,0.1994596"
+       transform="matrix(-1.2851658,0.9553372,-1.1801487,-1.0403489,313.07968,240.97397)"
+       sodipodi:start="0"
+       sodipodi:end="6.2721186"
+       inkscape:transform-center-x="-42.411026"
+       sodipodi:open="true" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#b85931;fill-opacity:1;stroke:#000000;stroke-width:0.16559134;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5268-3"
+       sodipodi:cx="12.705825"
+       sodipodi:cy="5.5545521"
+       sodipodi:rx="7.0434465"
+       sodipodi:ry="0.52921945"
+       d="M 19.724028,5.5097869 C 20.053071,5.8010193 17.177656,6.0571517 13.30161,6.0818749 9.4255629,6.106598 6.0166643,5.8905495 5.6876214,5.5993172 5.3585785,5.3080849 8.2339933,5.0519524 12.11004,5.0272293 c 3.866783,-0.024664 7.270604,0.1903237 7.611934,0.4807749"
+       transform="matrix(0.76988557,-1.0986557,7.4679997,1.1372861,207.37164,280.34138)"
+       sodipodi:start="6.198497"
+       sodipodi:end="12.478301"
+       inkscape:transform-center-x="136.56109"
+       inkscape:transform-center-y="0.9722091"
+       sodipodi:open="true" />
+    <path
+       style="fill:#e9ddaf;fill-opacity:1;stroke:#000000;stroke-width:1.01594877;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 264.63057,236.84151 c 10.86568,5.90802 13.06545,20.08594 13.06545,20.08594 l -14.75263,-20.38709 z"
+       id="path5574"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
