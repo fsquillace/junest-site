@@ -2,7 +2,7 @@ exclude: [vendor]
 baseurl: /junest-site
 
 name:         JuNest
-description:  The Arch Linux based distro that runs upon any Linux distros without root access
+description:  The lightweight Arch Linux based distro that runs, without root privileges, upon any Linux distro
 url:          http://fsquillace.github.io/junest-site/
 
 excerpt_separator: <!--more-->
