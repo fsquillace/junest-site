@@ -9,3 +9,5 @@ excerpt_separator: <!--more-->
 
 gems:
       - jekyll-sitemap
+
+theme: jekyll-theme-cayman
